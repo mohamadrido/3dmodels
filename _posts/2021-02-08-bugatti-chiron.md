@@ -3,7 +3,7 @@ title:  "Bugatti Chiron 2016"
 metadate: "hide"
 categories: [ Vehicle ]
 tags: [ supercar ]
-image: "/assets/images/bugatti-chiron.jpg"
+image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0DEV37siL2AbBDNHnooe8D-F2cbpfOjOBsh2d7ZLOcu667JGtDC4n_A69u73b2q6SONY6CuF_Ed8S8zwGITyJ7kkvDsdmwOD1_hSUSKELk8rxwLRa4eXbbOnLL56Nzv5OwcK0vrb8DL7VY1zjXaLdqffZw2YweYPPbKhpEkoWSl6dIhTMN7e2Oy1ibg/s0/bugatti-chiron.jpg"
 object: "Bugatti Chiron 2016 (Exterior Only)"
 geometry: "Subdivision-ready"
 vertices: "665,993"
