@@ -1,0 +1,13 @@
+name: 'Free 3D Models'
+description: 'Public Domain 3D Assets'
+author: 'Mohamad Rido'
+email: 'cc03ds@mail.ru'
+permalink: /:title
+plugin:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+markdown: kramdown
+highlighter: rouge
+paginate: 15

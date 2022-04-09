@@ -1,0 +1,19 @@
+---
+layout: default
+title: Categories
+---
+{% for models in site.categories %}
+<h2>{{models[0] | capitalize}}</h2>
+<div class="row">
+{% for post in models[1] %}
+  <div class="column">
+    <div class="card">
+    <a href="{{site.baseurl}}{{post.url}}">
+    <img alt="Free 3D {{ post.title }}" title="Free 3D {{ post.title }}" src="{{post.image}}">
+    <h3>{{ post.title }}</h3>
+    </a>
+    </div>
+  </div>
+{% endfor %}
+</div>
+{% endfor %}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="index, follow">
+<meta name="robots" content="index">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Jekyll v4.2.1" />
+<title>Free {% if page.tag or page.title %}{% if page.tag %}{{ page.tag | escape }}{% else %}{{ page.title | escape }}{% endif %} 3D Model - {% endif %}{% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}Page {{ paginator.page }} of {{ paginator.total_pages }} - {% endif %}{{ site.name | escape }}</title>
+<meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Free 3D {%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+<meta property="og:site_name" content="Free 3D Models">
+<meta property="article:publisher" content="http://www.facebook.com/pretendedstudio" />
+<meta property="article:author" content="https://www.facebook.com/pretendedstudio" />
+<meta property="article:published_time" content="{{ page.date }}" />
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<link rel="canonical" href="{{ page.url | prepend: site.url }}">
+<meta name="p:domain_verify" content="e093ed2011453a860170d69cfa3654df"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+<link rel="stylesheet" href="{{site.baseurl}}/assets/style.css">
+</head>
+<body>
+<header class="topnav" id="myTopnav">
+  <a href="https://free3dmodels.xyz" class="active">{{site.name}}<!--b style="font-size: 10px; color: #fff; background: #666; border-radius: 3px;padding: 1px 2px;">v1.2</b--></a>
+  <div class="header-right">
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <!--a href="{{site.baseurl}}/game-assets">Game Assets</a-->
+  <a href="{{site.baseurl}}/support">Support</a>
+  <a href="{{site.baseurl}}/categories">Categories</a>
+  <a href="{{site.baseurl}}/license">License</a>
+  <a href="{{site.baseurl}}/about">About</a>
+  <a href="{{site.baseurl}}/contact">Contact</a>
+  </div>
+</header>
+  <p></p>
+<!--div class="container" style="padding: 10px;">
+<button style="  border: none; outline: 0; display: inline-block; padding: 8px 12px; color: #fff; background-color: #0d6efd; text-align: center; cursor: pointer; border-radius: 6px;"><a style="color: #fff;" href="https://publicdomainmodels.com/game-assets">Game Assets</a></button>
+</div-->
+
+<article>
+{% if page.image %} 
+<img alt="Free {{ page.title }} 3D Model" style="width: 100%; border-radius: 6px;" title="Free {{ page.title }} 3D Model" src="{{ page.image }}">
+{% endif %}
+<h2>{{page.title}}</h2>
+{% unless page.metadate == "hide" %} 
+{{ page.date | date: '%B %d, %Y' }} 
+{% endunless %}
+{% if page.author %}
+, by {{page.author | capitalize}} 
+{% endif %}
+{{ content }}
+
+<!-- Table post -->
+<div class="post-columns" style="background-color:#fff; border: none; font-size: 14px;">
+<span style="color: #6c757d;">Name:</span> {{page.object}}<br />
+<span style="color: #6c757d;">Geometry:</span> {{page.geometry}}<br />
+<span style="color: #6c757d;">Vertices:</span> {{page.vertices}}<br />
+<span style="color: #6c757d;">Animated:</span> {{page.animated}}<br />
+<span style="color: #6c757d;">Rigged:</span> {{page.rigged}}<br />
+<span style="color: #6c757d;">Software:</span> {{page.software}}<br />
+<span style="color: #6c757d;">Engine:</span> {{page.engine}}<br />
+<span style="color: #6c757d;">Game Ready (low poly):</span> {{page.gameready}}<br />
+<span style="color: #6c757d;">3D Printable Ready:</span> {{page.3dprintableready}}<br />
+<span style="color: #6c757d;">Unwrapped UVs:</span> {{page.uvunwrapped}}<br />
+<span style="color: #6c757d;">Author:</span> {{page.admin}}<br />
+<span style="color: #6c757d;">License:</span> <a href="/license">Public Domain</a> / <a href="/faq">FAQ</a><br />
+</div>
+<div class="post-columns" style="background-color:#fff; border: none; font-size: 14px;">
+<span style="color: #6c757d;">Format & File:</span><br />
+Blender <i style="color: #6c757d;">(.blend)</i> {{page.blend}}<br />
+<span style="color: #6c757d;">Available Exported:</span><br />
+Collada <i style="color: #6c757d;">(.dae)</i> {{page.dae}}<br />
+3D Studio <i style="color: #6c757d;">(.3ds)</i> {{page.3ds}}<br />
+Autodesk FBX  <i style="color: #6c757d;">(.fbx)</i> {{page.fbx}}<br />
+Wavefront OBJ <i style="color: #6c757d;">(.obj, .mtl)</i> {{page.obj}}<br />
+Stereolithography <i style="color: #6c757d;">(.stl)</i> {{page.stl}}<br />
+<span style="color: #6c757d;">Third Parties:</span><br />
+Texture <i style="color: #6c757d;">{{page.imagetexture}}</i> {{page.texture}}<br />
+HDRI <i style="color: #6c757d;">{{page.environment}}</i> {{page.hdri}}<br />
+<span style="color: #6c757d;">Description:</span> {{page.notice}}<br />
+</div>
+<style>
+.post-columns a {color: #007bff; text-decoration: none;} .post-columns a:hover {color: #007bff; text-decoration: underline;} .post-columns {float: left; border: 1px solid #dedede; border-radius: 5px; padding: 0px 0px 5px 0px; width: 50%; height: auto;} .row:after {content: ""; display: table; clear: both;} @media screen and (max-width: 600px) { .post-columns { width: 100%; }}
+</style>
+<script src="/assets/rawgit.js"></script>
+<div class="row"></div>
+<!-- Navigation post -->
+<div style="text-align:left; font-size: 14px;">
+{% if page.next.url %}
+<a style="color: #555;" href="{{site.baseurl}}{{page.next.url}}"><svg height='14' viewBox='0 0 18 18' width='14'><path d='M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z' color='#555'/></svg> Next</a>
+{% endif %}
+</div>
+<div style="text-align:right; font-size: 14px;">
+{% if page.previous.url %}
+<a style="color: #555;" href="{{site.baseurl}}{{page.previous.url}}">Prev <svg height='14' viewBox='0 0 18 18' width='14'><path d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' color='#555'/></svg></a>
+{% endif %}
+</div>
+<br/>
+<!-- Related post -->
+  {% assign maxRelated = 15 %}
+  {% assign minCommonTags =  1 %}
+  {% assign maxRelatedCounter = 0 %}
+
+
+  {% for post in site.posts %}
+
+
+    {% assign sameTagCount = 0 %}
+    {% assign commonTags = '' %}
+
+    {% for tag in post.tags %}
+      {% if post.url != page.url %}
+        {% if page.tags contains tag %}
+          {% assign sameTagCount = sameTagCount | plus: 1 %}
+          {% capture tagmarkup %} <span class="label label-default">{{ tag }}</span> {% endcapture %}
+          {% assign commonTags = commonTags | append: tagmarkup %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% if sameTagCount >= minCommonTags %}
+
+  <div class="column">
+    <div class="card">
+          <a href="{{ site.baseurl }}{{ post.url }}">
+              <div class="rel">
+                <img alt="Free {{ page.title }} 3D Model" width="100%" title="Free {{ page.title }} 3D Model" src="{{post.image}}">
+                <h3>{{ post.title }}</h3>
+              </div>
+          </a>
+    </div>
+  </div>
+
+      {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+      {% if maxRelatedCounter >= maxRelated %}
+        {% break %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+<div class="row"></div>
+</article>
+
+<footer style="text-align: center; padding: 16px;">
+<!-- Social footer -->
+<!--a target="_blank" href="https://facebook.com/publicdomainmodels"><i class="fab fa-facebook-f" style="color: #666;"></i></a>
+<a target="_blank" href="https://github.com/publicdomainmodels"><i class="fab fa-github" style="color: #555;"></i></a>
+<a target="_blank" href="https://patreon.com/publicdomainmodels"><i class="fab fa-patreon" style="color: #666;"></i></a>
+<a target="_blank" href="https://instagram.com/publicdomainmodels"><i class="fab fa-instagram" style="color: #666;"></i></a>
+<a target="_blank" href="https://pinterest.com/publicdomainmodels"><i class="fab fa-pinterest" style="color: #666;"></i></a>
+<a target="_blank" href="https://linkedin.com/in/publicdomainmodels"><i class="fab fa-linkedin" style="color: #666;"></i></a-->
+<br/>
+<!-- Footer credit -->
+<span id="pdm" style="color: #666;"></span> &middot; <a style="color: #666;" href="https://free3dmodels.xyz">Free 3D Models</a>
+<script>
+document.getElementById("pdm").innerHTML = new Date().getFullYear();
+</script>
+</footer>
+<script src="{{site.baseurl}}/assets/topnav.js"></script>
+<!-- Scroll to Top -->
+<style>
+#myBtn {  display: none;  position: fixed;  bottom: 4.5em;  right: 1.5em;  z-index: 99;  font-size: 18px;  border: none;  outline: none;  background-color: #008eff;  color: white;  cursor: pointer;  padding: 0px 4px 0px 4px;  border-radius: 100%;} #myBtn:hover {  background-color: #0079de;}
+</style>
+<button onclick="topFunction()" id="myBtn"><svg style='width: 45px; height: 48px; ertical-align: middle;' viewBox="0 0 24 22"><path d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='#fff'></path></svg></button>
+<script>
+var mybutton = document.getElementById("myBtn");window.onscroll = function() {scrollFunction()};function scrollFunction() {  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {    mybutton.style.display = "block";  } else {    mybutton.style.display = "none";  }}function topFunction() {  document.body.scrollTop = 0;  document.documentElement.scrollTop = 0;}
+</script>
+<!-- Cookie Consent popup to comply with EU cookie law -->
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/cookieconsent.min.css"/>
+<script src="{{site.baseurl}}/assets/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){window.cookieconsent.initialise({"cookie": { "expiryDays": 730 },"palette": {"popup": { "background": "#212327" },"button": { "background": "#007bff" }},"theme": "classic"});});
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "923e7211471247c3b2d25ff888c4db82"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

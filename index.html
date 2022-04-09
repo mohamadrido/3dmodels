@@ -1,0 +1,28 @@
+---
+layout: default
+title: Free 3D Models
+---
+<div class="row">
+  {% for post in paginator.posts %}
+  <div class="column">
+    <div class="card">
+    <a href="{{site.baseurl}}{{post.url}}">
+    <img alt="Free {{ post.title }} 3D Model" title="Free 3D {{ post.title }}" src="{{post.image}}">
+    <h3  alt="Free {{ post.title }} 3D Model" >{{ post.title }}</h3>
+    </a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<br/>
+{% if paginator.previous_page %}
+{% if paginator.previous_page == 1 %}
+<a style="color: #444;" href="{{site.baseurl}}/{{ include.basepath }}" title="Previous Page"><svg height='14' viewBox='0 0 18 18' width='14'><path d='M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z' color='#555'/></svg> Newer</a>
+{% else %}
+<a style="color: #444;" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Previous Page"><svg height='14' viewBox='0 0 18 18' width='14'><path d='M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z' color='#555'/></svg> Prev</a>
+{% endif %}
+{% endif %}
+<span style="color: #555;"> &nbsp; &nbsp; Page {{paginator.page}} of {{paginator.total_pages}} &nbsp; &nbsp; </span>
+{% if paginator.next_page %} 
+<a style="color: #444;" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next Page">Older <svg height='14' viewBox='0 0 18 18' width='14'><path d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' color='#555'/></svg></a>
+{% endif %}

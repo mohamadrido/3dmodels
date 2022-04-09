@@ -1,0 +1,51 @@
+
+<!-- head -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width,minimum-scale=1,initial-scale=1" name="viewport">
+<link as="image" href="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" rel="preload"/>
+<link rel="preconnect dns-prefetch" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin>
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<link href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" hreflang="x-default" rel="alternate"/>
+
+<!-- favicon -->
+<!--link href="{{site.url}}{{ site.baseurl }}/img/favicon/favicon.ico" rel="icon" type="image/x-icon">
+<link href="{{site.url}}{{ site.baseurl }}/img/favicon/favicon-32x32.png" rel="icon" sizes="32x32">
+<link href="{{site.url}}{{ site.baseurl }}/img/favicon/android-icon-192x192.png" rel="icon" sizes="192x192">
+<link href="{{site.url}}{{ site.baseurl }}/img/favicon/apple-icon-180x180.png" rel="apple-touch-icon-precomposed">
+<meta content="{{site.url}}{{ site.baseurl }}/img/favicon/ms-icon-144x144.png" name="msapplication-TileImage"-->
+
+<!-- open_graph -->
+<meta content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" property="og:title">
+<meta content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" property="og:url">
+<meta content="{{ site.title }}" property="og:site_name">
+    {% if page.title %}<meta content="article" property="og:type">{% else %}<meta content="website" property="og:type">{% endif %}
+<meta content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" property="og:description">
+<meta content="{{site.url}}{{ site.baseurl }}/{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}" property="og:image">
+<meta content="100006644464463" property="fb:admins">
+<meta content="1043474759064054" property="fb:profile_id">
+<meta content="{{ site.author }}" name="Author">
+<meta content="https://www.facebook.com/{{ site.facebook_username }}" property="article:author">
+<meta content="{{ site.title }}" name="twitter:site">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@{{ site.twitter_username }}" name="twitter:creator">
+
+<!-- webmaster -->
+<!--meta name="google-site-verification" content="R4tmcsPWAv0kIJNLeMilv7QMAnLUS60QeXaFrcJFeiY" />
+<meta name="yandex-verification" content="0901541e8a32fdf5" />
+<meta name="msvalidate.01" content="B95CF197CA09F72E3C1A88A345A3321D" />
+<meta name="verifikasi" content="5lcmq1r3uk"/>
+<meta name="p:domain_verify" content="66707d2c7507a30ee196d28cd23ca5ea"/-->
+
+
+---
+layout: page
+title: About
+---
+<p>Hi, my name is <a style="color: #008eff;" href="https://mohamadrido.artstation.com">Mohamad Rido</a>! I’m from Central Java, Indonesia. The website you are previewing is a mirror from cc03ds.com (formerly CC0 3DS). This I do migration from <a style="color: #008eff;" href="https://blogger.com">Blogger</a> that makes me can not freely write the theme layouts. Obviously it is now fully Open Source under <a style="color: #008eff;" href="https://raw.githubusercontent.com/publicdomainmodels/project/main/LICENSE">MIT License</a>, with Jekyll theme and it is hosted on <a style="color: #008eff;" href="https://github.com">Github</a> pages. You can get access to server-side code and be allowed to know how the website operates. “I thought that sharing and providing the 3d models was a simple way to do it. But the reality is not like that. I had to learn the basics of creating a simple website and make ensure the 3d models is pure without credit or encrypted files. So you don't have to worry about it. ”.</p>
+<p>You know I as author this website just to share 3D Models from learning last 2018. Then had the initiative to share under <a style="color: #008eff;" href="https://creativecommons.org/publicdomain/mark/1.0">Public Domain</a> and <a style="color: #008eff;" href="https://creativecommons.org/publicdomain/zero/1.0">CC0</a> License. Instead just stored on the notebook hard drive. You can easily edit 3D Models from basic shapes (low poly) without being encrypted by me, so you can choose Creative Commons by you and use it however.</p>
+<p>The 3D Models that I have created are currently limited from the minimum system requirements. If you are expect 3D Models that includes a lot of assets, maybe I’ll make it a few parts when it’s published. These 3D Models are shared with priority to be able to see the results of the sample rendering with minimum system requirements, although I can create more detailed 3D models and then use render farm to see the results.</p>
+<div style="text-align: center;">
+<a style="color: #008eff;" href="/help">Help</a> &middot; <a style="color: #008eff;" href="/support">Support</a> &middot; <a style="color: #008eff;" href="/privacy">Privacy</a> &middot; <a style="color: #008eff;" href="/tos">Terms</a> &middot; <a style="color: #008eff;" href="/disclaimer">Disclaimer</a>
