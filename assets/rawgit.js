@@ -204,6 +204,12 @@ function disaar_sunscreen_obj(){window.open('https://github.com/cc03d/archive/ra
 function disaar_sunscreen_3ds(){window.open('https://github.com/cc03d/archive/raw/main/disaar-sunscreen-3ds.zip');}
 function disaar_sunscreen_dae(){window.open('https://github.com/cc03d/archive/raw/main/disaar-sunscreen-dae.zip');}
 function disaar_sunscreen_stl(){window.open('https://github.com/cc03d/archive/raw/main/disaar-sunscreen-stl.zip');}
+function hydro_coco_blend(){window.open('https://github.com/cc03d/archive/raw/main/hydro-coco.zip');}
+function hydro_coco_fbx(){window.open('https://github.com/cc03d/archive/raw/main/hydro-coco-fbx.zip');}
+function hydro_coco_obj(){window.open('https://github.com/cc03d/archive/raw/main/hydro-coco-obj.zip');}
+function hydro_coco_3ds(){window.open('https://github.com/cc03d/archive/raw/main/hydro-coco-3ds.zip');}
+function hydro_coco_dae(){window.open('https://github.com/cc03d/archive/raw/main/hydro-coco-dae.zip');}
+function hydro_coco_stl(){window.open('https://github.com/cc03d/archive/raw/main/hydro-coco-stl.zip');}
 function _blend(){window.open('https://github.com/cc03d/archive/raw/main/.zip');}
 function _fbx(){window.open('https://github.com/cc03d/archive/raw/main/.zip');}
 function _obj(){window.open('https://github.com/cc03d/archive/raw/main/.zip');}
